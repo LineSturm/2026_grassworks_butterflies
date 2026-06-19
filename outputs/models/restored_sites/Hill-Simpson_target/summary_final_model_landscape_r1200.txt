@@ -1,0 +1,36 @@
+
+Call:
+lm(formula = log(butterfly.Hill2.target + 1) ~ region + obs.year + 
+    region:obs.year + plant.target.richness + cover.vegetation + 
+    lk.grassland.per.min + agrar.r1200 + perm.grassland.r1200 + 
+    scale(rest.age, scale = FALSE) * scale(lc.shannon.div.r1200, 
+        scale = FALSE) + field.size.avg.r1200, data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.8291 -0.1751 -0.0066  0.2098  0.7418 
+
+Coefficients:
+                                                                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                                                0.679740   0.257152   2.643 0.009574 ** 
+regionCentre                                                               0.137311   0.138359   0.992 0.323457    
+regionSouth                                                                0.161673   0.146415   1.104 0.272231    
+obs.year2023                                                               0.254620   0.106354   2.394 0.018585 *  
+plant.target.richness                                                      0.010976   0.002776   3.954 0.000146 ***
+cover.vegetation                                                          -0.005594   0.002458  -2.276 0.025058 *  
+lk.grassland.per.min                                                       0.019756   0.027395   0.721 0.472559    
+agrar.r1200                                                                0.002905   0.002673   1.087 0.279810    
+perm.grassland.r1200                                                       0.002670   0.002656   1.005 0.317248    
+scale(rest.age, scale = FALSE)                                            -0.014221   0.003812  -3.731 0.000322 ***
+scale(lc.shannon.div.r1200, scale = FALSE)                                 0.032959   0.117422   0.281 0.779547    
+field.size.avg.r1200                                                      -0.004040   0.012524  -0.323 0.747707    
+regionCentre:obs.year2023                                                 -0.011713   0.154477  -0.076 0.939716    
+regionSouth:obs.year2023                                                  -0.410379   0.148121  -2.771 0.006707 ** 
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r1200, scale = FALSE) -0.001907   0.011914  -0.160 0.873141    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3115 on 97 degrees of freedom
+Multiple R-squared:  0.4241,	Adjusted R-squared:  0.341 
+F-statistic: 5.102 on 14 and 97 DF,  p-value: 4.514e-07
+

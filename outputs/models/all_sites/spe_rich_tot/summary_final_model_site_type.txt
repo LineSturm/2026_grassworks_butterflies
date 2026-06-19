@@ -1,0 +1,28 @@
+
+Family: poisson 
+Link function: log 
+
+Formula:
+butterfly.rich.total ~ site.type + obs.year + region + site.cwm.pres.oek.f + 
+    s(x, y)
+
+Parametric coefficients:
+                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)          2.92538    0.40664   7.194 6.29e-13 ***
+site.typerestored    0.25654    0.06236   4.114 3.89e-05 ***
+site.typepositive    0.34161    0.07229   4.726 2.29e-06 ***
+obs.year2023        -0.08064    0.04196  -1.922   0.0547 .  
+regionCentre         0.35286    0.26443   1.334   0.1821    
+regionSouth         -0.89148    1.07404  -0.830   0.4065    
+site.cwm.pres.oek.f -0.07200    0.03011  -2.391   0.0168 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+         edf Ref.df Chi.sq  p-value    
+s(x,y) 13.03   17.2  51.98 2.59e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.461   Deviance explained = 50.4%
+-REML = 553.08  Scale est. = 1         n = 187

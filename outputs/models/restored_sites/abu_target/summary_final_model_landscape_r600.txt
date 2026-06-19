@@ -1,0 +1,37 @@
+
+Call:
+glm.nb(formula = butterfly.target.abu ~ region + site.cwm.pres.oek.f + 
+    lk.grassland.per.min + scale(rest.age, scale = FALSE) * scale(lc.shannon.div.r600, 
+    scale = FALSE) + scale(rest.age, scale = FALSE) * scale(perm.grassland.r600, 
+    scale = FALSE) + field.size.avg.r600, data = data, init.theta = 1.308020408, 
+    link = log)
+
+Coefficients:
+                                                                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                                                               4.8905585  0.6893799   7.094 1.30e-12 ***
+regionCentre                                                              0.9867624  0.2802838   3.521 0.000431 ***
+regionSouth                                                               1.2670808  0.2923424   4.334 1.46e-05 ***
+site.cwm.pres.oek.f                                                      -0.5318443  0.1234565  -4.308 1.65e-05 ***
+lk.grassland.per.min                                                      0.0019500  0.0773691   0.025 0.979892    
+scale(rest.age, scale = FALSE)                                           -0.0308845  0.0115287  -2.679 0.007386 ** 
+scale(lc.shannon.div.r600, scale = FALSE)                                 0.0963589  0.2303011   0.418 0.675652    
+scale(perm.grassland.r600, scale = FALSE)                                 0.0067799  0.0058654   1.156 0.247718    
+field.size.avg.r600                                                      -0.0315172  0.0232153  -1.358 0.174590    
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r600, scale = FALSE)  0.0626362  0.0295079   2.123 0.033780 *  
+scale(rest.age, scale = FALSE):scale(perm.grassland.r600, scale = FALSE)  0.0006854  0.0006850   1.001 0.317060    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Negative Binomial(1.308) family taken to be 1)
+
+    Null deviance: 191.22  on 111  degrees of freedom
+Residual deviance: 126.87  on 101  degrees of freedom
+AIC: 904.36
+
+Number of Fisher Scoring iterations: 1
+
+
+              Theta:  1.308 
+          Std. Err.:  0.184 
+
+ 2 x log-likelihood:  -880.363 

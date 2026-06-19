@@ -1,0 +1,18 @@
+Anova Table (Type II tests)
+
+Response: butterfly.Hill2.target
+                        Sum Sq Df F value   Pr(>F)   
+region                   0.394  2  0.1892 0.827973   
+obs.year                 4.060  1  3.8953 0.051964 . 
+rest.age                 5.854  1  5.6161 0.020268 * 
+site.cwm.pres.oek.f      0.495  1  0.4747 0.492873   
+cover.vegetation         4.652  1  4.4631 0.037833 * 
+plant.target.richness   10.892  1 10.4495 0.001799 **
+flower.cover             0.263  1  0.2523 0.616885   
+veg.heterogeneity        0.000  1  0.0004 0.983860   
+mang.app.NEU.MM.1.minus  1.036  1  0.9935 0.321973   
+mngm.type                1.078  2  0.5169 0.598403   
+region:obs.year          6.821  2  3.2719 0.043202 * 
+Residuals               81.305 78                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -1,0 +1,37 @@
+
+Call:
+glm.nb(formula = butterfly.target.abu ~ region + site.cwm.pres.oek.f + 
+    lk.grassland.per.min + scale(rest.age, scale = FALSE) * scale(perm.grassland.r1200, 
+    scale = FALSE) + scale(rest.age, scale = FALSE) * scale(lc.shannon.div.r1200, 
+    scale = FALSE) + field.size.avg.r1200, data = data, init.theta = 1.302287814, 
+    link = log)
+
+Coefficients:
+                                                                            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                                                                4.5691480  0.6930202   6.593 4.31e-11 ***
+regionCentre                                                               1.1347790  0.3040669   3.732 0.000190 ***
+regionSouth                                                                1.1931712  0.2935165   4.065 4.80e-05 ***
+site.cwm.pres.oek.f                                                       -0.4592699  0.1234408  -3.721 0.000199 ***
+lk.grassland.per.min                                                       0.0177727  0.0749634   0.237 0.812591    
+scale(rest.age, scale = FALSE)                                            -0.0250700  0.0113209  -2.214 0.026795 *  
+scale(perm.grassland.r1200, scale = FALSE)                                 0.0085376  0.0073659   1.159 0.246428    
+scale(lc.shannon.div.r1200, scale = FALSE)                                 0.2940362  0.2968385   0.991 0.321901    
+field.size.avg.r1200                                                      -0.0480507  0.0290060  -1.657 0.097604 .  
+scale(rest.age, scale = FALSE):scale(perm.grassland.r1200, scale = FALSE)  0.0010429  0.0009395   1.110 0.266967    
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r1200, scale = FALSE)  0.0466663  0.0412133   1.132 0.257502    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Negative Binomial(1.3023) family taken to be 1)
+
+    Null deviance: 190.50  on 111  degrees of freedom
+Residual deviance: 126.64  on 101  degrees of freedom
+AIC: 904.59
+
+Number of Fisher Scoring iterations: 1
+
+
+              Theta:  1.302 
+          Std. Err.:  0.183 
+
+ 2 x log-likelihood:  -880.592 

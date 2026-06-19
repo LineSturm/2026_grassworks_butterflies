@@ -1,0 +1,27 @@
+
+Family: Tweedie(p=1.688) 
+Link function: log 
+
+Formula:
+butterfly.rich.total ~ region + obs.year + plant.target.richness + 
+    lk.grassland.per.min + field.size.avg.r1200 + scale(rest.age, 
+    scale = FALSE) * scale(perm.grassland.r1200, scale = FALSE) + 
+    scale(rest.age, scale = FALSE) * scale(lc.shannon.div.r1200, 
+        scale = FALSE) + s(x, y)
+
+Parametric Terms:
+                                                                          df      F  p-value
+region                                                                     2  0.993    0.374
+obs.year                                                                   1  2.555    0.113
+plant.target.richness                                                      1 28.379 7.13e-07
+lk.grassland.per.min                                                       1  0.601    0.440
+field.size.avg.r1200                                                       1  0.104    0.748
+scale(rest.age, scale = FALSE)                                             1  1.693    0.196
+scale(perm.grassland.r1200, scale = FALSE)                                 1  0.752    0.388
+scale(lc.shannon.div.r1200, scale = FALSE)                                 1  1.553    0.216
+scale(rest.age, scale = FALSE):scale(perm.grassland.r1200, scale = FALSE)  1  0.301    0.585
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r1200, scale = FALSE)  1  0.669    0.415
+
+Approximate significance of smooth terms:
+          edf Ref.df     F p-value
+s(x,y)  8.696 11.904 1.302    0.22

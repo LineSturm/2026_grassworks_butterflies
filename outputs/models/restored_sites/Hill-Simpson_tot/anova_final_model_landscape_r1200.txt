@@ -1,0 +1,18 @@
+Anova Table (Type II tests)
+
+Response: log(butterfly.Hill2.total)
+                                                                           Sum Sq Df F value    Pr(>F)    
+region                                                                     2.1705  2  7.9027 0.0006543 ***
+plant.target.richness                                                      1.6416  1 11.9541 0.0008051 ***
+cover.vegetation                                                           0.3134  1  2.2821 0.1340575    
+lk.grassland.per.min                                                       0.9091  1  6.6198 0.0115691 *  
+agrar.r1200                                                                0.5157  1  3.7552 0.0554938 .  
+scale(rest.age, scale = FALSE)                                             0.0908  1  0.6609 0.4182061    
+scale(lc.shannon.div.r1200, scale = FALSE)                                 0.0199  1  0.1447 0.7044565    
+scale(perm.grassland.r1200, scale = FALSE)                                 0.0957  1  0.6965 0.4059620    
+field.size.avg.r1200                                                       0.5061  1  3.6856 0.0577615 .  
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r1200, scale = FALSE)  0.0097  1  0.0707 0.7908838    
+scale(rest.age, scale = FALSE):scale(perm.grassland.r1200, scale = FALSE)  0.0167  1  0.1213 0.7284120    
+Residuals                                                                 13.5954 99                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

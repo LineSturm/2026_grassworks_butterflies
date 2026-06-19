@@ -1,0 +1,34 @@
+
+Call:
+lm(formula = log(butterfly.Hill2.total) ~ region + plant.target.richness + 
+    cover.vegetation + lk.grassland.per.min + agrar.r300 + scale(rest.age, 
+    scale = FALSE) * scale(lc.shannon.div.r300, scale = FALSE) + 
+    scale(rest.age, scale = FALSE) * scale(perm.grassland.r300, 
+        scale = FALSE) + field.size.avg.r300, data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.80155 -0.28544 -0.00127  0.24949  0.96860 
+
+Coefficients:
+                                                                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                                               1.1587175  0.2704249   4.285 4.25e-05 ***
+regionCentre                                                              0.0097198  0.1046551   0.093  0.92619    
+regionSouth                                                              -0.4528245  0.1457532  -3.107  0.00247 ** 
+plant.target.richness                                                     0.0108090  0.0032647   3.311  0.00130 ** 
+cover.vegetation                                                         -0.0043036  0.0028688  -1.500  0.13676    
+lk.grassland.per.min                                                      0.0523102  0.0354419   1.476  0.14313    
+agrar.r300                                                                0.0032989  0.0022789   1.448  0.15090    
+scale(rest.age, scale = FALSE)                                           -0.0007014  0.0048537  -0.145  0.88540    
+scale(lc.shannon.div.r300, scale = FALSE)                                 0.0584366  0.1158712   0.504  0.61515    
+scale(perm.grassland.r300, scale = FALSE)                                -0.0030942  0.0024778  -1.249  0.21469    
+field.size.avg.r300                                                      -0.0153973  0.0094548  -1.629  0.10659    
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r300, scale = FALSE) -0.0099506  0.0125615  -0.792  0.43017    
+scale(rest.age, scale = FALSE):scale(perm.grassland.r300, scale = FALSE) -0.0001159  0.0002674  -0.433  0.66572    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3693 on 99 degrees of freedom
+Multiple R-squared:  0.3368,	Adjusted R-squared:  0.2564 
+F-statistic:  4.19 on 12 and 99 DF,  p-value: 2.618e-05
+

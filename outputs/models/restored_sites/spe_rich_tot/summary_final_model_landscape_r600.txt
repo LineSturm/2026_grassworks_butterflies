@@ -1,0 +1,34 @@
+
+Family: poisson 
+Link function: log 
+
+Formula:
+butterfly.rich.total ~ region + obs.year + plant.target.richness + 
+    lk.grassland.per.min + field.size.avg.r600 + scale(rest.age, 
+    scale = FALSE) * scale(lc.shannon.div.r600, scale = FALSE) + 
+    scale(rest.age, scale = FALSE) * scale(perm.grassland.r600, 
+        scale = FALSE) + s(x, y)
+
+Parametric coefficients:
+                                                                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                                                               2.3560626  0.3559835   6.618 3.63e-11 ***
+regionCentre                                                              0.1847718  0.2614198   0.707   0.4797    
+regionSouth                                                              -0.6699253  0.8904070  -0.752   0.4518    
+obs.year2023                                                             -0.0936073  0.0537000  -1.743   0.0813 .  
+plant.target.richness                                                     0.0114574  0.0023693   4.836 1.33e-06 ***
+lk.grassland.per.min                                                      0.0105047  0.0224350   0.468   0.6396    
+field.size.avg.r600                                                      -0.0040592  0.0066407  -0.611   0.5410    
+scale(rest.age, scale = FALSE)                                           -0.0034460  0.0037045  -0.930   0.3523    
+scale(lc.shannon.div.r600, scale = FALSE)                                 0.0637863  0.0716104   0.891   0.3731    
+scale(perm.grassland.r600, scale = FALSE)                                -0.0025517  0.0018861  -1.353   0.1761    
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r600, scale = FALSE) -0.0089919  0.0088354  -1.018   0.3088    
+scale(rest.age, scale = FALSE):scale(perm.grassland.r600, scale = FALSE) -0.0002053  0.0002226  -0.922   0.3564    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+        edf Ref.df Chi.sq p-value
+s(x,y) 8.41  11.51  16.21   0.156
+
+R-sq.(adj) =  0.515   Deviance explained = 60.6%
+-REML =  346.6  Scale est. = 1         n = 112

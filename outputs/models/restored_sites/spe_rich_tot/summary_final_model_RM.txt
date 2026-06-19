@@ -1,0 +1,29 @@
+
+Call:
+glm(formula = butterfly.rich.total ~ region + obs.year + rest.meth + 
+    site.cwm.pres.oek.f + region:obs.year, family = "poisson", 
+    data = data)
+
+Coefficients:
+                          Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                2.74979    0.19391  14.181  < 2e-16 ***
+regionCentre               0.32067    0.09620   3.333 0.000858 ***
+regionSouth                0.49182    0.09285   5.297 1.18e-07 ***
+obs.year2023               0.09096    0.09649   0.943 0.345834    
+rest.methres               0.14054    0.07968   1.764 0.077739 .  
+rest.methdih               0.19898    0.08230   2.418 0.015618 *  
+rest.methmga               0.25440    0.08969   2.836 0.004562 ** 
+site.cwm.pres.oek.f       -0.10802    0.03273  -3.300 0.000968 ***
+regionCentre:obs.year2023 -0.12219    0.12544  -0.974 0.330014    
+regionSouth:obs.year2023  -0.27245    0.12522  -2.176 0.029580 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 218.19  on 120  degrees of freedom
+Residual deviance: 137.23  on 111  degrees of freedom
+AIC: 695.66
+
+Number of Fisher Scoring iterations: 4
+

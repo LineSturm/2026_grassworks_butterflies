@@ -1,0 +1,27 @@
+
+Family: poisson 
+Link function: log 
+
+Formula:
+butterfly.rich.total ~ region + obs.year + plant.target.richness + 
+    lk.grassland.per.min + field.size.avg.r600 + scale(rest.age, 
+    scale = FALSE) * scale(lc.shannon.div.r600, scale = FALSE) + 
+    scale(rest.age, scale = FALSE) * scale(perm.grassland.r600, 
+        scale = FALSE) + s(x, y)
+
+Parametric Terms:
+                                                                         df Chi.sq  p-value
+region                                                                    2  1.691   0.4294
+obs.year                                                                  1  3.039   0.0813
+plant.target.richness                                                     1 23.384 1.33e-06
+lk.grassland.per.min                                                      1  0.219   0.6396
+field.size.avg.r600                                                       1  0.374   0.5410
+scale(rest.age, scale = FALSE)                                            1  0.865   0.3523
+scale(lc.shannon.div.r600, scale = FALSE)                                 1  0.793   0.3731
+scale(perm.grassland.r600, scale = FALSE)                                 1  1.830   0.1761
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r600, scale = FALSE)  1  1.036   0.3088
+scale(rest.age, scale = FALSE):scale(perm.grassland.r600, scale = FALSE)  1  0.850   0.3564
+
+Approximate significance of smooth terms:
+         edf Ref.df Chi.sq p-value
+s(x,y)  8.41  11.52  16.21   0.156

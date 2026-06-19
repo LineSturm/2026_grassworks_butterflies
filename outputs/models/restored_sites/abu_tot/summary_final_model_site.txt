@@ -1,0 +1,37 @@
+
+Call:
+glm.nb(formula = butterfly.abu ~ region + obs.year + rest.age + 
+    site.cwm.pres.oek.f + plant.target.richness + flower.cover + 
+    veg.heterogeneity + mang.app.NEU.MM.1.minus + mngm.type, 
+    data = data, init.theta = 2.397729741, link = log)
+
+Coefficients:
+                         Estimate Std. Error z value Pr(>|z|)    
+(Intercept)              3.595662   0.595936   6.034  1.6e-09 ***
+regionCentre             0.567145   0.175295   3.235  0.00121 ** 
+regionSouth              0.545784   0.224644   2.430  0.01512 *  
+obs.year2023            -0.051751   0.126909  -0.408  0.68343    
+rest.age                -0.001488   0.008017  -0.186  0.85273    
+site.cwm.pres.oek.f     -0.172507   0.091359  -1.888  0.05900 .  
+plant.target.richness    0.012226   0.005745   2.128  0.03332 *  
+flower.cover             0.085978   0.084039   1.023  0.30627    
+veg.heterogeneity        0.028592   0.016836   1.698  0.08946 .  
+mang.app.NEU.MM.1.minus  0.381101   0.377095   1.011  0.31220    
+mngm.typegrazing        -0.025068   0.234181  -0.107  0.91475    
+mngm.typemowing          0.056603   0.209514   0.270  0.78703    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Negative Binomial(2.3977) family taken to be 1)
+
+    Null deviance: 177.82  on 111  degrees of freedom
+Residual deviance: 119.57  on 100  degrees of freedom
+AIC: 1168.4
+
+Number of Fisher Scoring iterations: 1
+
+
+              Theta:  2.398 
+          Std. Err.:  0.318 
+
+ 2 x log-likelihood:  -1142.406 

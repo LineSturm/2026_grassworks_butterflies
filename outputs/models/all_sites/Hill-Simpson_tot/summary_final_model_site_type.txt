@@ -1,0 +1,30 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+log(butterfly.Hill2.total) ~ site.type + obs.year + region + 
+    region:obs.year + site.cwm.pres.oek.f + s(x, y)
+
+Parametric coefficients:
+                           Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                1.448329   0.523490   2.767   0.0063 **
+site.typerestored          0.109706   0.088768   1.236   0.2182   
+site.typepositive          0.167350   0.108239   1.546   0.1240   
+obs.year2023               0.134245   0.121223   1.107   0.2697   
+regionCentre               0.006882   0.352231   0.020   0.9844   
+regionSouth               -0.378898   1.332840  -0.284   0.7765   
+site.cwm.pres.oek.f       -0.049514   0.045759  -1.082   0.2808   
+obs.year2023:regionCentre -0.134653   0.163806  -0.822   0.4122   
+obs.year2023:regionSouth  -0.054046   0.166029  -0.326   0.7452   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+         edf Ref.df     F p-value  
+s(x,y) 10.56  14.23 1.594   0.082 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =   0.14   Deviance explained = 22.6%
+-REML = 125.27  Scale est. = 0.18086   n = 187

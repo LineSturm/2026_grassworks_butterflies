@@ -1,0 +1,15 @@
+Analysis of Deviance Table (Type II tests)
+
+Response: butterfly.target.abu
+                        LR Chisq Df Pr(>Chisq)    
+region                   15.0076  2   0.000551 ***
+obs.year                  0.0141  1   0.905462    
+rest.age                  0.7477  1   0.387190    
+site.cwm.pres.oek.f       6.3319  1   0.011858 *  
+plant.target.richness     0.6345  1   0.425719    
+flower.cover              2.3760  1   0.123211    
+veg.heterogeneity         4.9414  1   0.026220 *  
+mang.app.NEU.MM.1.minus   0.0937  1   0.759533    
+mngm.type                 0.6554  2   0.720585    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

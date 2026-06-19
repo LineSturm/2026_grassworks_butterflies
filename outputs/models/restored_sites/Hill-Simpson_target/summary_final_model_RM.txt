@@ -1,0 +1,28 @@
+
+Call:
+lm(formula = butterfly.Hill2.target ~ region + obs.year + rest.meth + 
+    site.cwm.pres.oek.f + region:obs.year, data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.6031 -0.7135 -0.1432  0.5247  2.9991 
+
+Coefficients:
+                          Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                 1.8462     0.7183   2.570  0.01148 * 
+regionCentre                0.2988     0.3453   0.865  0.38868   
+regionSouth                 1.0123     0.3381   2.994  0.00339 **
+obs.year2023                0.5891     0.3237   1.820  0.07146 . 
+rest.methres                0.5877     0.2828   2.078  0.03999 * 
+rest.methdih                0.6506     0.2938   2.214  0.02886 * 
+rest.methmga                0.9968     0.3246   3.071  0.00268 **
+site.cwm.pres.oek.f        -0.1980     0.1259  -1.574  0.11843   
+regionCentre:obs.year2023   0.1839     0.4581   0.401  0.68888   
+regionSouth:obs.year2023   -0.9655     0.4582  -2.107  0.03735 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.018 on 111 degrees of freedom
+Multiple R-squared:  0.2311,	Adjusted R-squared:  0.1688 
+F-statistic: 3.707 on 9 and 111 DF,  p-value: 0.0004282
+

@@ -1,0 +1,34 @@
+
+Family: Tweedie(p=1.688) 
+Link function: log 
+
+Formula:
+butterfly.rich.total ~ region + obs.year + plant.target.richness + 
+    lk.grassland.per.min + field.size.avg.r1200 + scale(rest.age, 
+    scale = FALSE) * scale(perm.grassland.r1200, scale = FALSE) + 
+    scale(rest.age, scale = FALSE) * scale(lc.shannon.div.r1200, 
+        scale = FALSE) + s(x, y)
+
+Parametric coefficients:
+                                                                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                                                2.2503682  0.3512155   6.407 6.35e-09 ***
+regionCentre                                                               0.2172037  0.2522341   0.861    0.391    
+regionSouth                                                               -0.6412969  0.8861028  -0.724    0.471    
+obs.year2023                                                              -0.0816019  0.0510516  -1.598    0.113    
+plant.target.richness                                                      0.0125178  0.0023498   5.327 7.13e-07 ***
+lk.grassland.per.min                                                       0.0168876  0.0217825   0.775    0.440    
+field.size.avg.r1200                                                      -0.0027020  0.0083797  -0.322    0.748    
+scale(rest.age, scale = FALSE)                                            -0.0046175  0.0035484  -1.301    0.196    
+scale(perm.grassland.r1200, scale = FALSE)                                -0.0020156  0.0023243  -0.867    0.388    
+scale(lc.shannon.div.r1200, scale = FALSE)                                 0.1058815  0.0849730   1.246    0.216    
+scale(rest.age, scale = FALSE):scale(perm.grassland.r1200, scale = FALSE) -0.0001525  0.0002781  -0.548    0.585    
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r1200, scale = FALSE) -0.0094555  0.0115570  -0.818    0.415    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+         edf Ref.df     F p-value
+s(x,y) 8.696   11.9 1.302    0.22
+
+R-sq.(adj) =  0.494   Deviance explained = 59.9%
+-REML = 344.44  Scale est. = 0.14526   n = 112

@@ -1,0 +1,40 @@
+
+Call:
+glm.nb(formula = butterfly.abu ~ region + plant.target.richness + 
+    site.cwm.pres.oek.f + veg.heterogeneity + lk.grassland.per.min + 
+    scale(rest.age, scale = FALSE) * scale(perm.grassland.r600, 
+        scale = FALSE) + scale(rest.age, scale = FALSE) * scale(lc.shannon.div.r600, 
+    scale = FALSE) + field.size.avg.r600, data = data, init.theta = 2.477714626, 
+    link = log)
+
+Coefficients:
+                                                                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                                                               4.1373833  0.5658058   7.312 2.62e-13 ***
+regionCentre                                                              0.7530108  0.2017634   3.732  0.00019 ***
+regionSouth                                                               0.6155962  0.2415300   2.549  0.01081 *  
+plant.target.richness                                                     0.0124401  0.0056847   2.188  0.02864 *  
+site.cwm.pres.oek.f                                                      -0.2289267  0.0886734  -2.582  0.00983 ** 
+veg.heterogeneity                                                         0.0302675  0.0158999   1.904  0.05696 .  
+lk.grassland.per.min                                                      0.0001481  0.0562459   0.003  0.99790    
+scale(rest.age, scale = FALSE)                                           -0.0113228  0.0083314  -1.359  0.17413    
+scale(perm.grassland.r600, scale = FALSE)                                 0.0076844  0.0041685   1.843  0.06527 .  
+scale(lc.shannon.div.r600, scale = FALSE)                                 0.2419246  0.1641677   1.474  0.14058    
+field.size.avg.r600                                                      -0.0095042  0.0165777  -0.573  0.56643    
+scale(rest.age, scale = FALSE):scale(perm.grassland.r600, scale = FALSE)  0.0005005  0.0004825   1.037  0.29958    
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r600, scale = FALSE)  0.0416683  0.0206873   2.014  0.04399 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Negative Binomial(2.4777) family taken to be 1)
+
+    Null deviance: 183.44  on 111  degrees of freedom
+Residual deviance: 119.32  on  99  degrees of freedom
+AIC: 1166.5
+
+Number of Fisher Scoring iterations: 1
+
+
+              Theta:  2.478 
+          Std. Err.:  0.329 
+
+ 2 x log-likelihood:  -1138.465 

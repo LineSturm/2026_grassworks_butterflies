@@ -1,0 +1,12 @@
+Anova Table (Type II tests)
+
+Response: butterfly.Hill2.target
+                     Sum Sq  Df F value  Pr(>F)  
+region                5.264   2  2.5404 0.08341 .
+obs.year              3.004   1  2.8993 0.09142 .
+rest.meth            10.598   3  3.4100 0.02007 *
+site.cwm.pres.oek.f   2.565   1  2.4761 0.11843  
+region:obs.year       7.442   2  3.5917 0.03080 *
+Residuals           114.996 111                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

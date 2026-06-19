@@ -1,0 +1,17 @@
+Analysis of Deviance Table (Type II tests)
+
+Response: butterfly.abu
+                                                                         LR Chisq Df Pr(>Chisq)    
+region                                                                    15.7075  2  0.0003883 ***
+plant.target.richness                                                      4.6164  1  0.0316679 *  
+site.cwm.pres.oek.f                                                        4.8049  1  0.0283782 *  
+veg.heterogeneity                                                          3.5516  1  0.0594874 .  
+lk.grassland.per.min                                                       0.4887  1  0.4845066    
+scale(rest.age, scale = FALSE)                                             0.5517  1  0.4576080    
+scale(lc.shannon.div.r300, scale = FALSE)                                  0.1077  1  0.7428142    
+scale(perm.grassland.r300, scale = FALSE)                                  3.7899  1  0.0515617 .  
+field.size.avg.r300                                                        0.6899  1  0.4061820    
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r300, scale = FALSE)   0.2963  1  0.5861933    
+scale(rest.age, scale = FALSE):scale(perm.grassland.r300, scale = FALSE)   0.1670  1  0.6827820    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

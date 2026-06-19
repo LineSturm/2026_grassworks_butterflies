@@ -1,0 +1,26 @@
+
+Family: poisson 
+Link function: log 
+
+Formula:
+butterfly.rich.total ~ region + obs.year + region:obs.year + 
+    rest.age + site.cwm.pres.oek.f + plant.target.richness + 
+    flower.cover + veg.heterogeneity + mang.app.NEU.MM.1.minus + 
+    mngm.type + s(x, y)
+
+Parametric Terms:
+                        df Chi.sq  p-value
+region                   2  1.107   0.5748
+obs.year                 1  0.837   0.3603
+rest.age                 1  2.247   0.1339
+site.cwm.pres.oek.f      1  1.655   0.1982
+plant.target.richness    1 20.454 6.11e-06 ***
+flower.cover             1  0.001   0.9809
+veg.heterogeneity        1  1.695   0.1929
+mang.app.NEU.MM.1.minus  1  0.880   0.3483
+mngm.type                2  1.719   0.4234
+region:obs.year          2  6.713   0.0348 *
+
+Approximate significance of smooth terms:
+         edf Ref.df Chi.sq p-value
+s(x,y) 7.185  9.914   9.96    0.41

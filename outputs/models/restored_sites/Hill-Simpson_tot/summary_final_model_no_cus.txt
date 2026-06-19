@@ -1,0 +1,35 @@
+
+Call:
+lm(formula = butterfly.Hill2.total ~ region + obs.year + region:obs.year + 
+    rest.age + site.cwm.pres.oek.f + cover.vegetation + plant.target.richness + 
+    flower.cover + veg.heterogeneity + mang.app.NEU.MM.1.minus + 
+    mngm.type, data = data_x_cus)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.5651 -1.1428 -0.2201  0.7520  5.9611 
+
+Coefficients:
+                           Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                4.173659   1.761487   2.369  0.02029 * 
+regionCentre              -0.496195   0.727889  -0.682  0.49745   
+regionSouth                0.030484   0.839372   0.036  0.97112   
+obs.year2023               0.998233   0.689810   1.447  0.15187   
+rest.age                  -0.054457   0.032404  -1.681  0.09684 . 
+site.cwm.pres.oek.f        0.204780   0.286450   0.715  0.47681   
+cover.vegetation          -0.048211   0.017061  -2.826  0.00599 **
+plant.target.richness      0.053169   0.016410   3.240  0.00176 **
+flower.cover               0.271238   0.243215   1.115  0.26818   
+veg.heterogeneity         -0.020801   0.045847  -0.454  0.65130   
+mang.app.NEU.MM.1.minus    0.866830   1.059061   0.818  0.41557   
+mngm.typegrazing           0.004031   0.656140   0.006  0.99511   
+mngm.typemowing           -0.431128   0.616597  -0.699  0.48650   
+regionCentre:obs.year2023  0.419042   0.918751   0.456  0.64959   
+regionSouth:obs.year2023  -0.557319   0.930682  -0.599  0.55102   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.714 on 78 degrees of freedom
+Multiple R-squared:  0.2597,	Adjusted R-squared:  0.1268 
+F-statistic: 1.954 on 14 and 78 DF,  p-value: 0.03278
+

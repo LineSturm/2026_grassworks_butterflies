@@ -1,0 +1,31 @@
+
+Call:
+glm.nb(formula = butterfly.target.abu ~ site.type + region + 
+    obs.year + site.cwm.pres.oek.f, data = data, init.theta = 1.213738358, 
+    link = log)
+
+Coefficients:
+                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)           3.0110     0.5600   5.377 7.58e-08 ***
+site.typerestored     0.8245     0.1973   4.179 2.93e-05 ***
+site.typepositive     0.7374     0.2403   3.068 0.002153 ** 
+regionCentre          0.7615     0.1865   4.083 4.45e-05 ***
+regionSouth           1.1133     0.1744   6.382 1.75e-10 ***
+obs.year2023         -0.1389     0.1398  -0.993 0.320499    
+site.cwm.pres.oek.f  -0.2980     0.0903  -3.300 0.000966 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Negative Binomial(1.2137) family taken to be 1)
+
+    Null deviance: 304.81  on 186  degrees of freedom
+Residual deviance: 211.26  on 180  degrees of freedom
+AIC: 1436.2
+
+Number of Fisher Scoring iterations: 1
+
+
+              Theta:  1.214 
+          Std. Err.:  0.132 
+
+ 2 x log-likelihood:  -1420.192 

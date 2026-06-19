@@ -1,0 +1,11 @@
+Analysis of Deviance Table (Type II tests)
+
+Response: butterfly.rich.total
+                    LR Chisq Df Pr(>Chisq)    
+region               30.9020  2  1.949e-07 ***
+obs.year              1.3686  1  0.2420475    
+rest.meth             9.9716  3  0.0188091 *  
+site.cwm.pres.oek.f  11.1503  1  0.0008402 ***
+region:obs.year       4.8988  2  0.0863473 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

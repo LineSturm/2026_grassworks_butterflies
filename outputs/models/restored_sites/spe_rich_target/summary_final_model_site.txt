@@ -1,0 +1,32 @@
+
+Call:
+glm(formula = butterfly.rich.target ~ region + obs.year + rest.age + 
+    site.cwm.pres.oek.f + plant.target.richness + flower.cover + 
+    veg.heterogeneity + mang.app.NEU.MM.1.minus + mngm.type, 
+    family = "poisson", data = data)
+
+Coefficients:
+                         Estimate Std. Error z value Pr(>|z|)    
+(Intercept)              1.534907   0.412736   3.719  0.00020 ***
+regionCentre             0.412015   0.125898   3.273  0.00107 ** 
+regionSouth              0.114931   0.163510   0.703  0.48212    
+obs.year2023             0.031942   0.084101   0.380  0.70409    
+rest.age                -0.015965   0.006005  -2.659  0.00784 ** 
+site.cwm.pres.oek.f     -0.136030   0.062526  -2.176  0.02959 *  
+plant.target.richness    0.015497   0.003755   4.127 3.67e-05 ***
+flower.cover             0.073383   0.050830   1.444  0.14882    
+veg.heterogeneity       -0.004602   0.010733  -0.429  0.66809    
+mang.app.NEU.MM.1.minus  0.002572   0.239309   0.011  0.99142    
+mngm.typegrazing         0.201456   0.149741   1.345  0.17851    
+mngm.typemowing         -0.082884   0.141914  -0.584  0.55919    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 206.511  on 111  degrees of freedom
+Residual deviance:  98.861  on 100  degrees of freedom
+AIC: 499.54
+
+Number of Fisher Scoring iterations: 4
+

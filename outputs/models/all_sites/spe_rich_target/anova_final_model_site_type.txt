@@ -1,0 +1,18 @@
+
+Family: poisson 
+Link function: log 
+
+Formula:
+butterfly.rich.target ~ site.type + obs.year + region + site.cwm.pres.oek.f + 
+    s(x, y)
+
+Parametric Terms:
+                    df Chi.sq p-value
+site.type            2 11.211 0.00368
+obs.year             1  0.242 0.62259
+region               2  3.835 0.14700
+site.cwm.pres.oek.f  1  9.727 0.00182
+
+Approximate significance of smooth terms:
+         edf Ref.df Chi.sq  p-value
+s(x,y) 10.74  14.44  46.14 4.86e-05

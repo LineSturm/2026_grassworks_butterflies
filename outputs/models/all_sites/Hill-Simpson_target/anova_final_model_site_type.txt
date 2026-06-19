@@ -1,0 +1,19 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+butterfly.Hill2.target ~ site.type + obs.year + region + region:obs.year + 
+    site.cwm.pres.oek.f + s(x, y)
+
+Parametric Terms:
+                    df     F p-value
+site.type            2 6.644 0.00167
+obs.year             1 8.420 0.00420
+region               2 1.244 0.29093
+site.cwm.pres.oek.f  1 2.358 0.12647
+obs.year:region      2 4.898 0.00855
+
+Approximate significance of smooth terms:
+          edf Ref.df     F p-value
+s(x,y)  7.948 10.871 1.501   0.134

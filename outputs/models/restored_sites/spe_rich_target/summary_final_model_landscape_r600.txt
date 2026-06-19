@@ -1,0 +1,36 @@
+
+Call:
+glm(formula = butterfly.rich.target ~ region + mngm.type + plant.target.richness + 
+    site.cwm.pres.oek.f + lk.grassland.per.min + scale(rest.age, 
+    scale = FALSE) * scale(perm.grassland.r600, scale = FALSE) + 
+    scale(rest.age, scale = FALSE) * scale(lc.shannon.div.r600, 
+        scale = FALSE) + field.size.avg.r600, family = "poisson", 
+    data = data)
+
+Coefficients:
+                                                                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                                                               1.363e+00  4.102e-01   3.323 0.000889 ***
+regionCentre                                                              4.072e-01  1.371e-01   2.970 0.002981 ** 
+regionSouth                                                               1.058e-01  1.766e-01   0.599 0.549253    
+mngm.typegrazing                                                          1.448e-01  1.543e-01   0.938 0.348210    
+mngm.typemowing                                                          -5.437e-02  1.432e-01  -0.380 0.704300    
+plant.target.richness                                                     1.652e-02  3.783e-03   4.367 1.26e-05 ***
+site.cwm.pres.oek.f                                                      -1.284e-01  6.501e-02  -1.975 0.048254 *  
+lk.grassland.per.min                                                     -1.106e-02  3.548e-02  -0.312 0.755344    
+scale(rest.age, scale = FALSE)                                           -1.477e-02  6.018e-03  -2.454 0.014112 *  
+scale(perm.grassland.r600, scale = FALSE)                                -3.036e-03  2.834e-03  -1.071 0.284050    
+scale(lc.shannon.div.r600, scale = FALSE)                                -7.999e-02  1.098e-01  -0.729 0.466139    
+field.size.avg.r600                                                      -1.159e-03  9.891e-03  -0.117 0.906734    
+scale(rest.age, scale = FALSE):scale(perm.grassland.r600, scale = FALSE)  2.096e-05  3.661e-04   0.057 0.954351    
+scale(rest.age, scale = FALSE):scale(lc.shannon.div.r600, scale = FALSE) -1.544e-02  1.509e-02  -1.024 0.305968    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 206.511  on 111  degrees of freedom
+Residual deviance:  98.524  on  98  degrees of freedom
+AIC: 503.2
+
+Number of Fisher Scoring iterations: 4
+
