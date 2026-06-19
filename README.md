@@ -60,7 +60,7 @@ When using the **data available** in this repository, please cite the original p
 
 **Dataset**
 
-> TODO Zenodo
+> Zenodo TODO
 
 Raw data for this manuscript is also linked to PANGAEA
 > Sturm L, Schmidt A, Twerski A, Laschke CJ, Wiesmeier M, Kirmer A, Tischew S, Kollmann J, Temperton VM (2026) Butterflies observation data from restored grasslands and reference sites in Germany [dataset]. PANGAEA, https://doi.pangaea.de/10.1594/PANGAEA.982396 (dataset in review)
