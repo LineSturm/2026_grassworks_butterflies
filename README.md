@@ -42,9 +42,9 @@
 
 #### Package versioning
 
-TODO The used versions of R and the packages are saved in `2026_grassworks_butterflies/R/renv.lock`.
+The used versions of R and the packages are saved in `2026_grassworks_butterflies/R/renv.lock`.
 
-TODO You can restore this state by executing `renv::restore()` in the console.
+You can restore this state by executing `renv::restore()` in the console.
 
 ## Citation
 
@@ -56,7 +56,7 @@ When using the **data available** in this repository, please cite the original p
 
 **Publication**
 
-> Sturm L*, Kirmer A, Kollmann J, Temperton VM, Buchhart C, Laeseke P, Laschke CJ, May F, Thiele J, Tischew S, Twerski A, Wiesmeier M & Schmidt A (2026) Plant species richness is key for restoring grassland butterfly assemblages.. &ndash; _Journal of Applied Ecology_ TODO 63, TODO e70390. <https://doi.org/ TODO >
+> Sturm L*, Kirmer A, Kollmann J, Temperton VM, Buchhart C, Laeseke P, Laschke CJ, May F, Thiele J, Tischew S, Twerski A, Wiesmeier M & Schmidt A (2026) Plant species richness is key for restoring grassland butterfly assemblages.. &ndash; _Journal of Applied Ecology_ TODO
 
 **Dataset**
 
