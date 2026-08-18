@@ -60,7 +60,7 @@ When using the **data available** in this repository, please cite the original p
 
 **Data and Code**
 
-> Sturm L, Kirmer A, Kollmann J, Temperton VM, Buchhart C, Laeseke P, Laschke CJ, May F, Thiele J, Tischew S, Twerski A, Wiesmeier M & Schmidt A (2026) Data and code for Sturm et al. (2026) J Appl Ecol (v1.0.0) [data and code]. &ndash; _Zenodo_. [https://doi.org/10.5281/zenodo.20763922](https://doi.org/10.5281/zenodo.20763922)
+> Sturm L, Kirmer A, Kollmann J, Temperton VM, Buchhart C, Laeseke P, Laschke CJ, May F, Thiele J, Tischew S, Twerski A, Wiesmeier M & Schmidt A (2026) Data and code for Sturm et al. (2026) J Appl Ecol [data and code]. &ndash; _Zenodo_. [https://doi.org/10.5281/zenodo.20763922](https://doi.org/10.5281/zenodo.20763922)
 
 Raw data for this manuscript is also linked to PANGAEA
 > Sturm L, Schmidt A, Twerski A, Laschke CJ, Wiesmeier M, Kirmer A, Tischew S, Kollmann J & Temperton VM (2026) Butterflies observation data from restored grasslands and reference sites in Germany [dataset]. &ndash; _PANGAEA_. [https://doi.org/10.1594/PANGAEA.982396](https://doi.org/10.1594/PANGAEA.982396)
